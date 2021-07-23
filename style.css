@@ -75,7 +75,8 @@ h4 {
 	border-width: 1px;
 	position: relative;
 	bottom: -20px;
-	left: 0px;
+	left: 0px;	
+	text-align: center
 }
 
 #currencyTo{

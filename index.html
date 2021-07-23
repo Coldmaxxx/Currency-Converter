@@ -10,11 +10,11 @@
   <body>
     <h2><a href="Amount"></a></h2>
     <div> 
-      <input oninput="convertAmount()" type="number" id="amount" value="" /> 
+      <input   onimput ="convertAmount()" type="number" id="amount" value=""   /> 
     </div>
     <h3>From</h3>
     <div>
-      <select  id="currencyFrom">
+      <select  onchange="convertAmount()" id="currencyFrom">
         <option value="USD">Dollar (USD)</option>
         <option value="EUR">Euro (Euro)</option>
         <option value="PLN">Polish Zloty (PLN)</option>
@@ -24,7 +24,7 @@
 
     <h4>To</h4>
       <div>
-        <select  id="currencyTo">
+        <select onchange="convertAmount()"  id="currencyTo">
           <option value="USD">Dollar (USD)</option>
           <option value="EUR">Euro (Euro)</option>
           <option value="PLN">Polish Zloty (PLN)</option>
@@ -33,11 +33,11 @@
       </div>
 
       <div>
-          <button onchange="convertAmount()" id="convert">Convert</button>
+          <button onclick = "getResult()" id="convert">Convert</button>
           <button type="reset" id="reset" for="amount">Reset</button>
 
       </div>
-      <div onchange="convertAmount()" class="result" id="result"  value=""> 
+      <div class="result" id="result"  value=""> Result:
 
       </div>
     
