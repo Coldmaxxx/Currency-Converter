@@ -1,0 +1,124 @@
+body{
+	font-family: 'Kalam', cursive;
+}
+
+.title {
+	width: 455px;
+	font-size: 19px;
+	background-color: #dbdbde;
+	padding: 5px;
+}
+
+
+h1 {
+	font-weight: bold;
+	padding: 5px;
+	margin: 10px 10px 3px 10px;
+
+}
+h1 {
+	font-weight: bold;
+	padding: 5px;
+	margin: 10px 10px 3px 10px;
+}
+
+h2 {
+	font-weight: bold;
+	padding: 5px;
+	margin: 15px 10px 3px 10px;
+
+}
+
+h3 {
+	font-weight: bold;
+	padding: 5px;
+	margin: 15px 10px 3px 10px;
+}
+
+h4 {
+	font-weight: bold;
+	padding: 5px;
+	margin: 15px 10px 3px 10px;
+}
+
+#convert {
+	width: 217px;
+	background:  #1575fb;
+	font-family: 'Kalam', cursive;  
+	padding: 5px;
+	margin: 30px 1px 3px 10px;
+	border-radius: 5px;
+	color: rgb(255, 255, 255);
+	border-width: 1px;
+}
+
+#reset {
+	width: 217px;
+	background: #1575fb;
+	font-family: 'Kalam', cursive;
+	padding: 5px;
+	margin: 30px 10px 3px 1px;
+	border-radius: 5px;
+	color: rgb(255, 255, 255);
+	border-width: 1px;
+}
+
+.result {
+	width: 430px;
+	height: 25px;
+	background: #f30707;
+	font-family: 'Kalam', cursive;
+	padding: 5px;
+	margin: 10px 10px 3px 10px;
+	border-radius: 5px;
+	color: rgb(255, 255, 255);
+	border-width: 1px;
+	position: relative;
+	bottom: -20px;
+	left: 0px;
+}
+
+#currencyTo{
+	width: 440px;
+	font-family: 'Kalam', cursive;
+	font-size: 17px;
+	padding: 5px;
+	margin: 1px 10px 3px 10px;
+}
+
+#currencyFrom{
+	width: 440px;
+	font-family: 'Kalam', cursive;
+	font-size: 17px;
+	padding: 5px;
+	margin: 1px 10px 1px 10px;
+}
+
+span {
+	color: blueviolet;
+	padding: 5px 0px;
+	margin: 3px 0px;
+}
+
+input {
+	width: 438px;
+	padding: 8px 0px 8px ;
+	margin: 10px;
+	border-radius: 5px;
+	border-width: 1px;
+	font-size: 17px;
+}
+
+#amount {
+	border-radius: 5px;
+}
+
+select {
+	
+	border-radius: 5px;
+	border-width: 1px;
+	padding:5px 5px 1px;
+	margin: 1px 10px 1px 10px;
+}
+
+

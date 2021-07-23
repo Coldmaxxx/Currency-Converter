@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <div class="title">
+      <h1> <span>₹</span> Currency Converter</h1>
+    </div>
+  </head>
+ 
+  <body>
+    <h2><a href="Amount"></a></h2>
+    <div> 
+      <input oninput="convertAmount()" type="number" id="amount" value="" /> 
+    </div>
+    <h3>From</h3>
+    <div>
+      <select  id="currencyFrom">
+        <option value="USD">Dollar (USD)</option>
+        <option value="EUR">Euro (Euro)</option>
+        <option value="PLN">Polish Zloty (PLN)</option>
+        <option value="BYN">Belarusian ruble (BYN)</option>
+     </select>
+    </div>
+
+    <h4>To</h4>
+      <div>
+        <select  id="currencyTo">
+          <option value="USD">Dollar (USD)</option>
+          <option value="EUR">Euro (Euro)</option>
+          <option value="PLN">Polish Zloty (PLN)</option>
+          <option value="BYN">Belarusian ruble (BYN)</option>
+       </select>
+      </div>
+
+      <div>
+          <button onchange="convertAmount()" id="convert">Convert</button>
+          <button type="reset" id="reset" for="amount">Reset</button>
+
+      </div>
+      <div onchange="convertAmount()" class="result" id="result"  value=""> 
+
+      </div>
+    
+
+<script src="script.js"></script>
+</body>
+</html>
