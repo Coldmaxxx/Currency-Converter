@@ -1,6 +1,3 @@
-
-
-
 const exRateUSD = {
   'USD':1, 
   'EUR':0.8493,
@@ -29,15 +26,13 @@ const exRateBYN = {
   'BYN':1,
 };  
 
-const amountInput = document.getElementById('amount');                   
+/*const amountInput = document.getElementById('amount');                   
 const amountResult = document.getElementById('result');        
 const currencyFromSelect = document.getElementById('currencyFrom');      
-const currencyToSelect = document.getElementById('currencyTo');  
-
+const currencyToSelect = document.getElementById('currencyTo');  */
 
 
 function getResult() {
-
   document.getElementById("result").innerHTML = `Result: ${convertAmount()}  ${getSymbol()}`
 }
 
@@ -46,41 +41,42 @@ return document.getElementById("currencyTo").value
 }
 
 function convertAmount () {
-  const Amount = document.getElementById('amount').value
+  const volume = document.getElementById('amount').value
   const currentFrom = document.getElementById("currencyFrom").value
   const currentTo  = document.getElementById("currencyTo").value
   let result = 0
 
-   if (Amount ==  "" ) {
+   if (volume ==  "" ) {
     result = 0
   }
   
   else if (currentTo === currentFrom) {
-    result = Amount
+    result = volume
   }
   
-  
-
   else if (currentFrom === 'USD') {
-    result =  ( (Amount * exRateUSD[currentTo] * exRateUSD[currentFrom] * 100000) / 100000)
+    result =  (Math.round ( (volume * exRateUSD[currentTo] * exRateUSD[currentFrom] * 100) ) / 100)
   }
   
   else if (currentFrom === 'EUR') {
-    result =  ( (Amount * exRateEUR[currentTo] * exRateEUR[currentFrom] * 100000) / 100000)
+    result =  (Math.round  ( (volume * exRateEUR[currentTo] * exRateEUR[currentFrom] * 100) ) / 100)
   }
 
   else if (currentFrom === 'PLN') {
-    result =  ( (Amount * exRatePLN[currentTo] * exRatePLN[currentFrom] * 100000) / 100000)
+    result =  (Math.round ( (volume * exRatePLN[currentTo] * exRatePLN[currentFrom] * 100) ) / 100)
   }
 
   else if (currentFrom === 'BYN') {
-    result =  ( (Amount * exRateBYN[currentTo] * exRateBYN[currentFrom] * 100000) / 100000)
+    result = (Math.round ( (volume * exRateBYN[currentTo] * exRateBYN[currentFrom] * 100) ) / 100)
   }
 
   return result
 
-  
-
-
 }
 
+function doReset() {
+  document.getElementById("amount").value = ""
+  document.getElementById("result").innerHTML = "Result:"
+  document.getElementById("currencyFrom").selectedIndex = "0"
+  document.getElementById("currencyTo").selectedIndex = "0"
+}
