@@ -26,12 +26,6 @@ const exRateBYN = {
   'BYN':1,
 };  
 
-/*const amountInput = document.getElementById('amount');                   
-const amountResult = document.getElementById('result');        
-const currencyFromSelect = document.getElementById('currencyFrom');      
-const currencyToSelect = document.getElementById('currencyTo');  */
-
-
 function getResult() {
   document.getElementById("result").innerHTML = `Result: ${convertAmount()}  ${getSymbol()}`
 }
